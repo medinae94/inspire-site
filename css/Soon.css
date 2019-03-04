@@ -65,6 +65,9 @@ body{
   color: #fff;
   cursor: pointer;
   transition: 0.4s;
+  width: 150px;
+  height: 40px;
+  border-radius: 25px;
 }
 .newsletter-btn:hover{
   opacity: .7;

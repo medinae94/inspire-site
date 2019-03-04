@@ -2,7 +2,7 @@
 #header_wrap {
   z-index: 2;
   width: 100%;
-  height: 400px;
+  height: 200px;
   position: fixed;
   }
   #header {
@@ -421,67 +421,100 @@
   }
   #typer-size{
     font-size: 35px;
+    position: relative;
+    left: 400px;
+    bottom: 30px;
   }
 /* Begin Services CSS */
-.services{
-  text-align: center;
-}
-
-.services h1{
-  display: inline-block;
-  text-transform: uppercase;
-  border-bottom: 1px solid black;
-  font-size: 35px;
-  padding-bottom: 10px;
-  margin-top: 80px;
-}
-
-.cen{
-  max-width: 1200px;
-  margin: auto;
-  overflow: hidden;
-  padding: 20px;
-}
-
-.service{
-  display: inline-block;
-  width: calc(100% / 3);
-  margin: 0 -2px;
-  padding: 20px;
-  box-sizing: border-box;
-  cursor: pointer;
-  transition: 0.4s;
-  background-color: rgba(152,152,152,.2);
-}
-
-.service:hover{
-  background-color: rgba(152,152,152,.7);
-}
-
-.service i {
-color: #3498db;
-font-size: 35px;
-margin-bottom: 30px;
-}
-.service h2{
-  font-size: 23px;
-  text-transform: uppercase;
-  font-weight: 500;
-  margin: 0;
-}
-
-.service p{
-  color: black;
-  font-size: 19px;
-  font-weight: 500;
-  margin: 10px;
-}
-
-@media screen and (max-width: 500px) {
-  .service{
-    width: 100%;
+.services-section{
+    background: url(bg.jpg);
+    background-size: cover;
+    padding: 60px 0;
   }
-}
+  .inner-width{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    overflow: hidden;
+  }
+  .section-title{
+    text-align: center;
+    color: #ddd;
+    text-transform: uppercase;
+    font-size: 30px;
+  }
+  .border{
+    width: 160px;
+    height: 2px;
+    background: #82ccdd;
+    margin: 40px auto;
+  }
+  .services-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .service-box{
+    max-width: 33.33%;
+    padding: 10px;
+    text-align: center;
+    color: #ddd;
+    cursor: pointer;
+  }
+  
+  .service-icon{
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border: 3px solid #1289c9;
+    color: #3A5C90;
+    transform: rotate(45deg);
+    margin-bottom: 30px;
+    margin-top: 16px;
+    transition: 0.3s linear;
+  }
+  .service-icon i{
+    line-height: 70px;
+    transform: rotate(-45deg);
+    font-size: 26px;
+  }
+  .service-box:hover .service-icon{
+    background: #3A5C90;
+    color: #ddd;
+  }
+  .service-title{
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: black;
+  }
+  .service-desc{
+    font-size: 18px;
+  }
+
+  .service-desc:hover{
+    color: black;
+  }
+  
+  @media screen and (max-width:960px) {
+    .service-box{
+      max-width: 45%;
+    }
+  }
+  
+  @media screen and (max-width:768px) {
+    .service-box{
+      max-width: 50%;
+    }
+  }
+  
+  @media screen and (max-width:480px) {
+    .service-box{
+      max-width: 100%;
+    }
+  }
 /* End Services CSS */
 
 #footer {

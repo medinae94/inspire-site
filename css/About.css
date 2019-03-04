@@ -145,7 +145,7 @@ background-size: cover;
       transform: translateX(-50%) translateY(-50%);
       width: 22px;
       height: 2px;
-      background-color: #1289c9;
+      background-color: #0f6999;
   }
   
   .navi-trigger .navi-icon::before, .navi-trigger .navi-icon:after {
@@ -533,7 +533,7 @@ a:hover {
 }
 
 .process .method h4 {
-  background: #8fc6ff;
+  background: rgba(58, 92, 144, 0.952);
   width: 60px;
   height: 60px;
   font-size: 2em;
@@ -543,16 +543,6 @@ a:hover {
   margin: 0 auto;
   position: relative;
   top: 30px;
-}
-
-/*------------------------------------------------------------------
-                        SECTION.BLOGS STYLES
--------------------------------------------------------------------*/
-
-.firstAnimation {
-  opacity: 1;
-  height: 180px;
-  width: 250px;
 }
 
 /*------------------------------------------------------------------
