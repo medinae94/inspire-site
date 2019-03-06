@@ -1,12 +1,13 @@
 body{
-  margin: 0;
-  padding: 0;
-  font-family: American-typewriter;
+  margin: auto;
+  font-family: 'Anonymous Pro', monospace;
 }
 .page{
   background: #f1f1f1;
   display: flex;
   flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
 }
 
 .col{
@@ -15,9 +16,14 @@ body{
   position: relative;
 }
 
-.countdown-col{
-  background: url("https://www.aricheryou.com/wp-content/uploads/2018/01/emile-perron-190221-1024x576.jpg") no-repeat center;
+img {
+  background: url("https://www.aricheryou.com/wp-content/uploads/2018/01/emile-perron-190221-1024x576.jpg") no-repeat cover center;
   background-size: 100% 100vh;
+  width: 100%;
+  height: 95%;
+}
+
+.countdown-col{
   opacity: 0.9;
 }
 .time{
@@ -26,6 +32,7 @@ body{
   width: 90%;
   display: flex;
   justify-content: center;
+  font-family: 'Anonymous Pro', monospace;
 }
 .middle{
   position: absolute;
@@ -44,12 +51,13 @@ body{
 
 .newsletter{
   width: 90%;
+  height: 75%;
 }
 .newsletter h4{
-  font-style: italic;
-  font-size: 14px;
+  font-size: 20px;
 }
 .newsletter input{
+  font-family: 'Anonymous Pro', monospace;
   display: block;
   margin: 12px auto;
   width: 100%;
@@ -59,8 +67,10 @@ body{
   border-radius: 30px;
   border: 1px solid #ddd;
   outline: none;
+  font-size: 18px;
 }
 .newsletter-btn{
+  font-family: 'Anonymous Pro', monospace;
   background: linear-gradient(125deg,#3498db,#34495e);
   color: #fff;
   cursor: pointer;
@@ -68,9 +78,28 @@ body{
   width: 150px;
   height: 40px;
   border-radius: 25px;
+  font-size: 18px;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+  outline-color: #34495e;
+  outline-offset: 0;
 }
 .newsletter-btn:hover{
   opacity: .7;
+  border: 1px solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5),
+    0 0 20px rgba(255, 255, 255, 0.2);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #427388;
+}
+
+.newsletter-col{
+  margin: 2% auto;
+  height: 100vh;
+  width: 100%;
 }
 
 @media screen and (max-width: 900px){
@@ -78,3 +107,40 @@ body{
     flex: 100%;
   }
 }
+
+/*Begin Info CSS */
+
+.container {
+  margin: 12px auto;
+  margin-bottom: 0;
+  position: relative;
+  bottom: 40px;
+  right: 7px;
+}
+
+h1 {
+  font-weight: bold;
+  position: relative;
+  bottom: 06px;
+  font-size: 20px;
+}
+
+.info-body {
+  border: 1.75px solid #3a5c90;
+  padding: 20px;
+  width: 95%;
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 20px;
+  line-height: 1.25;
+}
+
+p {
+  font-size: 18px;
+  width: 95%;
+  color: black;
+}
+
+a {
+  color:black;
+}
+/*End Info CSS */
