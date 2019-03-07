@@ -2,7 +2,6 @@
 #header_wrap {
   z-index: 2;
   width: 100%;
-  height: 400px;
   position: fixed;
   }
   #header {
@@ -25,10 +24,11 @@
   font-size: 12px;
   font-weight: 100;
   }
-  /* Begin Nav Bar CSS */
-  h1, h2 {
+   /* Begin Nav Bar CSS */
+   h1, h2 {
     font-family: 'Anonymous Pro', monospace;
-    font-weight: 700;
+    font-weight: 1000;
+    font-size: 1.5rem; 
   }
   
   p {
@@ -104,9 +104,9 @@
       z-index: 3;
       left: 90%;
       top: 20px;
-      height: 60px;
-      width: 60px;
-      background-color:rgba(18, 137, 201, 0.1);
+      height: 70px;
+      width: 70px;
+      background-color:rgba(197, 196, 196, 0.144);
       border-radius: 50%;
       overflow: hidden;
       text-indent: 100%;
@@ -312,17 +312,23 @@
   
   .navi .primary-navi {
       margin-top: 60px;
+      font-size: 800px;
   }
   
   .navi .primary-navi > li {
       margin: 1.6em 0;
+      font-size: 18px;
   }
   
   .navi .primary-navi a {
-      font-family: 'Raleway', sans-serif;
+      font-family: 'Anonymous Pro', monospace;
       font-size: 2.4rem;
       color: #1289c9;
       display: inline-block;
+  }
+
+  a {
+    font-size: 2.4rem;
   }
   
   .navi .primary-navi a.selected {
@@ -330,7 +336,7 @@
   }
   
   .no-touch .navi .primary-navi a:hover {
-      color: #ffffff;
+      color: black;
   }
   
   .no-js div.main {
@@ -389,23 +395,31 @@
       .navi .half-block {
         width: 50%;
         float: left;
+        font-family: 'Anonymous Pro', monospace;
+        font-size: 2.4rem; 
+        font-weight: 1000;       
       }
       
       .navi .primary-navi {
         margin-top: 0;
+        font-size: 2.4rem;
+        font-weight: 1000;
       }
     
       .navi h2 {
-        font-size: 1.5rem;
-        margin-bottom: 5.6em;
+        color: black;
+        margin-bottom: 150px;
+        font-size: 36px;
       }
     
       .navi .primary-navi li {
         margin: 2em 0;
+        font-size: 2.4rem; 
+        font-weight: 1000;
       }
     
       .navi .primary-navi a {
-        font-size: 2rem;
+        font-size: 34px;
       }
   }
   /* End Nav Bar CSS */
@@ -498,7 +512,6 @@ font-weight: bold;
   position: relative;
   right: 25%;
   left: 25%;
-  background: yellowgreen;
   background-image: linear-gradient(bottom, #3A5C90 0%, #3A5C90);
   background-image: -moz-linear-gradient(bottom, #3A5C90 0%, #3A5C90);
   background-image: -webkit-linear-gradient(bottom, #3A5C90 0%, #3A5C90);
@@ -506,6 +519,7 @@ font-weight: bold;
   margin: 0 0 5px;
   padding: 10px;
   border-radius: 5px;
+  font-size: 16px;
 }
 #contact-form button[type="submit"]:hover {
   color: black;
@@ -566,4 +580,68 @@ textarea:required {
   position: relative;
   top: 100px;
   color: #1289c9;
+  font-size: 18px;
+}
+
+.contact .fa:before {
+  display: inline-block;
+  opacity: 0.8;
+  color:  rgb(255, 255, 255);
+}
+
+.contact li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0 1em;
+  text-align: center;
+}
+
+li p:hover {
+  font-weight: 1000;
+}
+
+.contact p {
+  text-align: center;
+  font-family: 'Anonymous Pro', monospace;
+  color:#1289c9;
+}
+
+.contact p:hover {
+  font-weight: 400;
+  color: #ddd;
+}
+
+.contact {
+  display: inline-block;
+  margin: 0 auto;
+  padding-left: 0;
+  font-weight: 800;
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.contact:hover {
+  color: #ddd;
+}
+
+
+.cont {
+  margin-top: 75px;
+  text-align: center;
+  margin-bottom: 50px;
+  height: 50px;
+}
+
+.cont:hover{
+  color:  #ddd;
+  font-weight: 500;
+}
+
+.cont i {
+  color: #3A5C90;
+}
+
+.cont i:hover{
+  color: #ddd;
 }
